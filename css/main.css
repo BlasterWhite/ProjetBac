@@ -4,6 +4,23 @@ body {
     padding: 0px;
     display: flexbox;
     text-align: center;
+    background-color: #262626;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#logo {
+    transition: 0.5s;
+}
+
+.white-mode {
+  background-color: #fff;
+  color: #262626;
+  transition: 0.5s;
+}
+.white-logo-mode {
+  filter: invert(75%);
+  transition: 0.5s;
 }
 
 .open {
@@ -23,97 +40,9 @@ body {
     color: white;
     transition: 0.3s;
 }
-/*
-.logo {
-    filter: invert(75%); 
-}
-*/
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-    background-color: rgba(75, 255, 75, 0.9);
-    margin-bottom: 100px;
-  }
-  
-  .flex-item-left {
-    padding: 10px;
-    flex: 50%;
-  }
-  
-  .flex-item-right {
-    padding: 10px;
-    flex: 50%;
-  }
-  
-  /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
+header {
+    background-color: lightgreen;
+    width: 100%;
+
+}
