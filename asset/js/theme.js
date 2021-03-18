@@ -8,6 +8,8 @@ function test() {
 function switch_theme() {
    var element = document.body;
    element.classList.toggle("white-mode");
-    var logo = document.getElementById("logo");
+   var logo = document.getElementById("logo");
    logo.classList.toggle("white-logo-mode");
+   var logo = document.getElementById("board");
+   logo.classList.toggle("text-mode");
 }
