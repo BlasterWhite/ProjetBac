@@ -1,15 +1,26 @@
-
 console.log("[INFORAMTION] \"theme.js\" chargé.")
 
-function test() {
-  console.log("Reçu 5/5");
-}
-
-function switch_theme() {
-   var element = document.body;
-   element.classList.toggle("white-mode");
-   var logo = document.getElementById("logo");
-   logo.classList.toggle("white-logo-mode");
-   var logo = document.getElementById("board");
-   logo.classList.toggle("text-mode");
+var x = 0;
+function switchmode() {
+  if(x == 0) {
+      x++;
+      console.log("On");
+      selec = document.getElementsByClassName("panel");
+      var i;
+      for (i = 0; i < selec.length; i++) {
+      selec[i].classList.add("blind-color");
+      selec[i].classList.remove("normal-color");
+      }
+  }
+  else {
+      x= 0;
+      console.log("Off");
+      selec = document.getElementsByClassName("panel");
+      var i;
+      console.log(selec.length);
+      for (i = 0; i < selec.length; i++) {
+      selec[i].classList.add("normal-color");
+      selec[i].classList.remove("blind-color");        
+      }
+  }
 }

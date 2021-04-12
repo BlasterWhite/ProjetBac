@@ -14,7 +14,7 @@ body {
 }
 
 .white-mode {
-  background-color: #fff;
+  background-color: black;
   color: #262626;
   transition: 0.5s;
 }
@@ -27,42 +27,47 @@ body {
   color: #262626;
 }
 
-.open {
-    padding: 10px;
-    border: solid rgba(75, 255, 75, 0.9) 2px;
-    border-radius: 5px;
-    background-color:rgba(75, 255, 75, 1);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.3s;
-}
-
-.open:hover {
-    border: solid rgba(255, 75, 75, 0.9) 2px;
-    border-radius: 15px;
-    background-color:rgba(255, 75, 75, 1);
-    color: white;
-    transition: 0.3s;
-}
-
 header {
     background-color: lightgreen;
     width: 100%;
-
 }
 
 div.panel {
   width: 300px;
   height: 400px;
-  background-color: rgb(214, 214, 214);
-  border: rgb(214, 214, 214) 2px solid;
   border-radius: 25px;
-  color: white;
   margin: 20px;
   float: left;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-/*
-.setting {
-  float: right;
-}*/
+.normal-color {
+  background-color: rgb(212, 212, 212);
+  border: rgb(212, 212, 212) 2px solid;
+}
+
+.blind-color {
+  background-color: rgb(0, 0, 0);
+  border: rgb(0, 0, 0) 2px solid;
+}
+/*Toutes les icons: */
+.egg {
+  color: rgb(255, 239, 174);
+}
+
+.door {
+   color: rgb(135, 135, 135);
+}
+
+.water {
+  color: rgb(0, 187, 249);
+}
+
+.wheat {
+  color: rgb(106, 209, 10);
+}
+
+.chicken {
+  color: red;
+  width: auto;
+  height: 120px;
+}
