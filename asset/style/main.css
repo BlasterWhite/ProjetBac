@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+:root {
+  --panel: rgb(211, 211, 211);
+  --fond: rgb(243, 243, 243);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--fond);
+  font-family: "Raleway", sans-serif;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+header {
+  background-color: red;
+  padding: 3px;
+  color: #ffffff;
+}
+
+header h2 {
+  text-align: center;
+}
+
+.menu {
+  padding: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.menu:hover {
+  color: #cacaca;
+}
+
+.panel__width {
+  padding: 20px;
+  background-color: var(--panel);
+  width: 20%;
+}
+
+div.panel {
+  padding: 20px;
+  background-color: var(--panel);
+  width: 250px;
+  height: 350px;
+  border: 1px solid var(--panel);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  margin: 30px 0px 0px 30px;
+  float: left;
+}
+
+div .panel h2 {
+  color: #252525;
+  text-align: center;
+  padding: 0px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.gauge {
+  top: 180px;
+  width: 100%;
+  max-width: 250px;
+  height: 150px;
+  margin: auto auto;
+}
+
+.gauge__body {
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  background-color: #262626;
+  position: relative;
+  border-top-left-radius: 100% 200%;
+  border-top-right-radius: 100% 200%;
+  overflow: hidden;
+  font-size: 32px;
+}
+
+.gauge__fill {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  background: rgb(0, 167, 233);
+  transform-origin: center top;
+  transform: rotate(0.25turn);
+  transition: transform 0.5s ease-out;
+}
+
+.gauge__cover {
+  width: 75%;
+  height: 150%;
+  background: var(--panel);
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Texte */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25%;
+  box-sizing: border-box;
+}
+
+h3.labels {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 670px) {
+  div.panel {
+    float: none;
+    margin: 30px auto 30px auto;
+    width: 350px;
+  }
+  h3.labels {
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+}

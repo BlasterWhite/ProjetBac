@@ -1,0 +1,71 @@
+<script src="asset/script/setValue.js"></script>
+<script src="asset/script/receive.js"></script>
+<script src="asset/script/gauge.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="asset/style/main.css">
+    <title>Votre Poulailler</title>
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/d50a18be62.js" crossorigin="anonymous"></script>
+    <script src="asset/script/menu.js"></script>
+    <script src="asset/script/test.js"></script>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" style="color: rgb(94, 197, 231);">Acceuil</a>
+        <a onclick="test()" style="text-decoration: line-through;color: rgb(160, 227, 6);">Logs</a>
+        <a href="#"style="text-decoration: line-through;color: rgb(230, 42, 52)">Paramètres</a>
+        <a href="#"style="text-decoration: line-through;color: rgb(58, 230, 42)">Aides</a>
+    </div>
+    <div id="main">
+    <header>
+    <span onclick="openNav()" class="menu"><i class="fas fa-bars"></i></span>
+    <h2>Votre Poulailler</h2>    
+    </header>
+    <h3 class="labels">Capteurs :</h3>
+    <div class="panel">
+        <h2>Réservoir d'Eau</h2>
+        <p class="icon" style="text-align: center;"><i class="fas fa-tint" style="color: rgb(80, 80, 209);font-size: 90px;"></i></p>
+        <div class="gauge" id="eau">
+            <div class="gauge__body">
+                <div class="gauge__fill"></div>
+                <div class="gauge__cover">?</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h2>Température</h2>
+        <p class="icon" style="text-align: center;"><i class="fas fa-thermometer-half" style="color: rgb(34, 34, 34);font-size: 120px;"></i></p>
+        <br>
+        <p style="text-align: center;font-size: 32px;"><span id="temperatureValue"> ? </span> °C</p>
+    </div>
+
+    <div class="panel">
+        <h2>Œuf</h2>
+        <p class="icon" style="text-align: center;"><i class="fas fa-egg egg" style="color: #ffd79a;font-size: 120px;"></i></p>
+        <br>
+        <p style="text-align: center;font-size: 32px;" id="eggValue">?</p>
+    </div>
+
+    <div class="panel">
+        <h2>Poules</h2>
+        <img src="asset/img/chicken.png" style="height: 120px; text-align: center;margin: 10px auto 20px; display: block;">
+        <br>
+        <p style="text-align: center;font-size: 32px;"><span id="chickenValue"> ? </span>/ 12</p>
+    </div>
+
+    <div class="panel">
+        <h2>Porte</h2>
+        <img src="asset/img/door.png" style="height: 120px; text-align: center;margin: 10px auto 20px; display: block;">
+        <br>
+        <p style="text-align: center;font-size: 32px;" id="doorStatue">?</p>
+    </div>
+    </div>
+</body>
+</html>
