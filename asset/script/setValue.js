@@ -24,8 +24,7 @@ function setChicken(value) {
 }
 
 function setStatueDoor(statue) {
+    statue = parseInt(statue);
     if(statue == 1) document.getElementById("doorStatue").innerHTML = 'Ouverte';
-    if(statue == 0) document.getElementById("doorStatue").innerHTML = 'Fermé';  
-    if(statue) document.getElementById("doorStatue").innerHTML = 'Ouverte';
-    if(!statue) document.getElementById("doorStatue").innerHTML = 'Fermé';   
+    if(statue == 0) document.getElementById("doorStatue").innerHTML = 'Fermé';   
 }
