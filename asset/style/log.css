@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+:root {
+  --fond: rgb(243, 243, 243);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--fond);
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  background-color: red;
+  padding: 3px;
+  color: #ffffff;
+}
+
+header h2 {
+  text-align: center;
+}
+
+.menu {
+  padding: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.menu:hover {
+  color: #cacaca;
+}
+
+.indice {
+  font-size: 15px;
+}
+
+/* Tableau */
+
+#tableau {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#tableau td,
+#tableau th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableau tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tableau tr:hover {
+  background-color: #ddd;
+}
+
+#tableau th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+}
